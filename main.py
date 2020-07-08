@@ -287,7 +287,7 @@ for Nconfig in range(Nconfigs):
 
 
     ###############################################
-    #######            Plotting                #######
+    #######            Plotting             #######
     ###############################################
     plt.figure(figsize=(0.55*20,0.55*19))
     gs = gridspec.GridSpec(20, 19)
@@ -389,3 +389,4 @@ for Nconfig in range(Nconfigs):
     cbar.ax.set_ylabel('Magnetic field, $B$ ($mT$)')
 
     plt.savefig(os.path.join(directory,'magnetic_trap_{}.png'.format(Nconfig+1)))
+    plt.close()
